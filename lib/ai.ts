@@ -7,8 +7,8 @@ import type { Lead, LeadScore, Strategy } from "./types";
  * On a Vercel deployment the Gateway authenticates with the project's OIDC token
  * automatically, so no API key is needed. Locally, set AI_GATEWAY_API_KEY.
  */
-export const MODEL = process.env.REPLYRANK_MODEL ?? "deepseek/deepseek-v4.1-flash-1017";
-const FALLBACKS = (process.env.REPLYRANK_FALLBACK_MODELS ?? "inception/mercury-3,tencent/hy4-flash")
+export const MODEL = process.env.REPLYRANK_MODEL ?? "tencent/hy4-flash";
+const FALLBACKS = (process.env.REPLYRANK_FALLBACK_MODELS ?? "inception/mercury-3,thinkingmachines/inkling-2-small")
   .split(",")
   .map((s) => s.trim())
   .filter(Boolean);

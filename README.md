@@ -28,8 +28,8 @@ AI_GATEWAY_API_KEY=... npm run dev  # AI mode
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `REPLYRANK_MODEL` | `deepseek/deepseek-v4.1-flash-1017` | Primary Gateway model (any `provider/model` id) |
-| `REPLYRANK_FALLBACK_MODELS` | `inception/mercury-3,tencent/hy4-flash` | Gateway fallbacks, tried in order |
+| `REPLYRANK_MODEL` | `tencent/hy4-flash` | Primary Gateway model; the defaults are all in AI Gateway's free tier |
+| `REPLYRANK_FALLBACK_MODELS` | `inception/mercury-3,thinkingmachines/inkling-2-small` | Gateway fallbacks, tried in order |
 | `REPLYRANK_MODE` | (unset) | Set to `rules` to force rules-only mode |
 | `REPLYRANK_AI_CALLS_PER_10MIN` | `20` | Per-IP AI call limit that protects the free credit |
 
